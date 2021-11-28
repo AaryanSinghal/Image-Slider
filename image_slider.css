@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+}
+
+.header {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    background-color: #3C3848;
+    z-index: 2;
+    padding: 0px;
+    overflow: hidden;
+    transition: all linear 0.2s;
+    left: -13%;
+}
+
+.nav .icon_list {
+    /* right: 8px; */
+    top: 160px;
+    width: 100;
+}
+
+.nav .icon_list li {
+    /* width: auto; */
+    position: relative;
+    top: 160px;
+    /* right: 0; */
+    padding: 10px;
+    list-style: none;
+    /* width: 100%; */
+    font-size: 24px;
+    margin-top: 30px;
+    /*background-color: tomato;*/
+    /* opacity: 0; */
+    transition: all linear 0.2s;
+}
+
+.icon_list li {
+    width: 50px;
+    left: 80%;
+    color: white;
+}
+
+.icon_list li:hover {
+    border: solid 2px white;
+    transform: scale(1.2);
+    transition: none;
+}
+
+.icon_list li span {
+    display: none;
+}
+
+.icon_list li.open-nav {
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    color: white
+}
+
+.icon_list li span.open-nav-text {
+    display: inline;
+}
+
+.nav.active {
+    left: 0%;
+    background-color: #3C3848;
+    border: solid 2px white;
+}
+
+.nav button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 2;
+    padding: 5px 10px;
+}
+
+.slider {
+    margin: 0;
+    background: #120d1d;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    /*background-color: tomato;*/
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+
+.images {
+    height: 80vh;
+    flex: 1;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    transition: all linear 0.5s;
+}
+
+.img1 {
+    background-image: url(https://wallpaperaccess.com/full/7445.jpg);
+}
+
+.img2 {
+    background-image: url(https://wallpaperaccess.com/full/2877721.jpg);
+}
+
+.img3 {
+    background-image: url(https://i.pinimg.com/originals/7b/34/1c/7b341ce30f442716773f605a7c45c064.jpg);
+}
+
+.img4 {
+    background-image: url(https://www.teahub.io/photos/full/8-86647_4k-ultra-hd-games-wallpapers-desktop-backgrounds-hd.jpg);
+}
+
+.img5 {
+    background-image: url(https://i.pinimg.com/originals/f4/18/6b/f4186bad6310ab1aa8128fea146122b7.jpg);
+}
+
+.images h1 {
+    position: absolute;
+    font-size: 20px;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+    opacity: 0;
+}
+
+.images.active {
+    flex: 10;
+    transition: all linear 0.5s;
+}
+
+.images.active h1 {
+    opacity: 1;
+    transition: all linear 0.5s;
+}
